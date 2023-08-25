@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG | Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="rpg.html">RPG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="working.html">How Works</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rules.html">Requirements</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="effects.html">Side Effects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <main id="input-container" style="width: 80%; margin-left: 10%;">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Random Password Generator</h1>
+              <p class="lead">Enter some key in below if none leave it empty.</p>
+            </div>
+            <div class="form-group" style="width: 75%;margin-left: 5%;" >
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password Key"><br>
+                <button onclick="rpgpassword()" id="generate" type="button" class="btn btn-outline-primary">Generate</button>
+              </div><br>
+              <p class="lead" id="output" style="margin-left: 5%;"></p>
+            </div>
+          </main>
+</body>
+<script src="index.js" ></script>
+</html>
