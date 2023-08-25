@@ -42,15 +42,15 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Random Password Generator</h1>
-              <p class="lead">Enter some key in below if none leave it empty.</p>
+              <p class="lead">Enter some key (do not leave it empty).</p>
             </div>
             <div class="form-group" style="width: 75%;margin-left: 5%;" >
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password Key"><br>
+                <input required type="text" class="form-control" id="key" placeholder="Password Key"><br>
                 <button onclick="rpgpassword()" id="generate" type="button" class="btn btn-outline-primary">Generate</button>
               </div><br>
               <p class="lead" id="output" style="margin-left: 5%;"></p>
             </div>
           </main>
-</body>
+</body> 
 <script src="index.js" ></script>
 </html>
