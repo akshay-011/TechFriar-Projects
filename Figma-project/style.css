@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+
+body{
+
+    background-color:  #2E333A;
+}
+
+#navbar{
+    height: 136px;
+    padding: 30px 80px 30px 80px;
+}
+#nav-content{
+    display: flex;
+    flex-direction: row;
+    height: 76px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+}
+#logo{
+    margin: 0;
+    width: 200px;
+    height: 60.81px;
+    
+    background: url(assets/image.png);
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+}
+background-color: rgba(255,0,0,.5);
+#nav-buttons{
+    width: 318px;
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+
+}
+#sign-in-btn{
+    width: Hug (172px);
+    height: Hug (55px);
+    padding: 10px 40px 10px 40px;
+    border-radius: 12px;
+    gap: 10px;
+    background: rgba(46, 51, 58, 1);
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px rgba(0, 0, 0, 1);
+    box-shadow: -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px rgba(59, 68, 81, 1);
+    
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+
+
+}
+#sign-in{
+
+    width: 92px;
+    height: 35px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: rgba(178, 194, 203, 1);
+
+}
+
+#discord{
+    width: 76px;
+    height: 76px;
+    border-radius: 12px;
+    /* justify-content: end; */
+    background-color: red;
+    display: flex;
+
+}
