@@ -116,13 +116,19 @@ body {
 .full-width{
     width: 100%;
 }   
-  
+
+.logos{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
+}
 
 
-/* Class styling ends */
-
-/*  Navigation bar starts hehe  */
-#navbar {
+.navbar {
     height: 76px; 
     padding: 10px 80px;
     background-color: #2E333A;
@@ -131,6 +137,9 @@ body {
     z-index: 1000; 
   }
   
+/* Class styling ends */
+
+/*  Navigation bar starts hehe  */
 #nav-content{
     display: flex;
     flex-direction: row;
@@ -174,7 +183,6 @@ body {
 
 }
 #sign-in{
-    /* width: 92px; */
     height: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -186,16 +194,49 @@ body {
 }
 
 #discord{
-    width: 76px;
-    height: 76px;
-    border-radius: 12px;
     background-image: url(assets/discord.svg);
+}
+
+#search{
+    width: 350px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    background: #2E333A;
     display: flex;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+#search-input{
+    height: 15px;
+    box-shadow: -6.223021507263184px -6.223021507263184px 6.223021507263184px 0px #3B4451 inset;
+    width: 300px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #2E333A;
+    box-shadow: 3.7338130474090576px 3.7338130474090576px 6.223021507263184px 0px #000000 inset;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
 
 }
+#search-icon{
+    width: 30px;
+    height: 25px;
+    background-image: url(assets/Search.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /* Navigation bar ends */
 
@@ -447,4 +488,70 @@ form{
     background-image: url(assets/no-show.svg);
     background-repeat: no-repeat;
     height: 26px;
+}
+#twitter{
+    background-image: url(assets/twitter.svg);
+}
+#notification{
+    background-image: url(assets/notification.svg);
+}
+#content{
+    background-image: url(assets/Content.svg);
+    border-radius: 36px;
+}
+
+#after{
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
+}
+
+/* side navbar */
+
+.sidebar{
+    width: 100px;
+    padding: 25px 0px 25px 0px;
+    border-radius: 0px 20px 20px 0px;
+    gap: 50px;
+    background: #2E333A;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+}
+
+#binocular{
+    background-image: url(assets/binocular.svg);
+}
+#trophy{
+    background-image: url(assets/trophy.svg);
+}
+#ticket{
+    background-image: url(assets/ticket.svg);
+}
+#geometry{
+    background-image: url(assets/geometry.svg);
+}
+#share{
+    background-image: url(assets/Share.svg);
+}
+#settings{
+    background-image: url(assets/Settings.svg);
+}
+#dots{
+    background-image: url(assets/dots.svg);
+}
+#logout{
+    background-image: url(assets/Logout.svg);
+}
+
+.buttons-main div {
+    margin-top: 20px;
+}
+
+#content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
 }
