@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-body{
-    background-color:  #2E333A;
-    margin: 0;
+body {
+    background-color: #2E333A;
+    margin: 0; 
+    padding: 0;
 }
-
 
 
 /* Class styling starts */
@@ -115,21 +115,22 @@ body{
 
 .full-width{
     width: 100%;
-}
-
+}   
+  
 
 
 /* Class styling ends */
 
 /*  Navigation bar starts hehe  */
-#navbar{
-    height: 10%;
-    padding: 0 80px 0 80px;
-    margin: 0;
-    background-color:  #2E333A;
-    z-index: 1;
-    margin-bottom: 2%;
-}
+#navbar {
+    height: 76px; 
+    padding: 10px 80px;
+    background-color: #2E333A;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+  }
+  
 #nav-content{
     display: flex;
     flex-direction: row;
@@ -142,13 +143,10 @@ body{
     margin: 0;
     width: 200px;
     height: 60.81px;
-    
     background: url(assets/image.png);
-    
     flex: none;
     order: 0;
-    flex-grow: 0;
-    
+    flex-grow: 0;  
     
 }
 #nav-buttons{
@@ -162,7 +160,6 @@ body{
 }
 #sign-in-btn{
     justify-content: center;
-    width: 172px;
     height: 55px;
     padding: 10px 40px 10px 40px;
     border-radius: 12px;
@@ -177,7 +174,7 @@ body{
 
 }
 #sign-in{
-    width: 92px;
+    /* width: 92px; */
     height: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -196,7 +193,6 @@ body{
     display: flex;
     background-repeat: no-repeat;
     background-position: center;
-
     box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
 
 }
@@ -285,7 +281,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 5%;
 }
 
 #maintain{
@@ -336,7 +332,7 @@ body{
 #form-main{
     width: 800px;
     border-radius: 25px;
-    gap: 50px;
+    /* gap: 50px; */
     background: #2E333A;
     box-shadow: -7px -7px 30px 0px #262E32;
 
@@ -431,4 +427,24 @@ form{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+}
+
+.password-main{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.input-icon{
+    position: absolute;
+    width:30px;
+    height: 25px;
+}
+#show-icon{
+    background-image: url(assets/show.svg);
+    background-repeat: no-repeat;   
+}
+#no-show-icon{
+    background-image: url(assets/no-show.svg);
+    background-repeat: no-repeat;
+    height: 26px;
 }
