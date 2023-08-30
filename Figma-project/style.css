@@ -569,8 +569,7 @@ form{
     padding: 25px;
     border-radius: 25px;
     background: #2E333A;
-    box-shadow: -7px -7px 30px 0px #262E32;
-    box-shadow: 14px 14px 40px 0px #101012BF;
+    box-shadow: -7px -7px 30px 0px #262E32, 14px 14px 40px 0px #101012BF;
 }
 .main-head-text{
     font-family: 'Poppins', sans-serif;
@@ -672,7 +671,7 @@ form{
 
 #head2{
     width: 119px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     gap: 5px;
     box-shadow: -5px -5px 5px 0px #3B4451 inset, 3px 3px 5px 0px #000000 inset;
@@ -721,7 +720,6 @@ form{
 #readings{
     position: absolute;
     left: 7%;
-    bottom: 0;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -872,4 +870,19 @@ sub{
 
 tbody tr td{
     padding: 20px;
+}
+.bars{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.bars p{
+    position: absolute;
+    top: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+
+
 }
