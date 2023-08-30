@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?reload=9&v=T3rUlKf40M0
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select
-
+https://www.coding-dude.com/wp/html5/bar-chart-html/
+https://www.youtube.com/watch?si=UgPKRgtpraeQvhSI&v=8ANP3LTStZg

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily SLP</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <nav class="navbar" id="after" >
@@ -41,10 +42,196 @@
     <main id="content-container">
         <section id="secondary-container">
             <div id="forecast">
-
+                <p class="main-head-text">Forecast</p>
+                <main id="text-container">
+                    <section id="today" >
+                        <h2>Today so far</h2>
+                        <h3 style="color: #0ED2F6;" >0 SLP</h3>
+                        <h6 class="sub-text" >~0.0 USD</h6>
+                    </section>
+                    <section >
+                        <p>Expected at the end of the day:</p>
+                        <h3>0 SLP</h3>
+                        <h6 class="sub-text" >~0.0 USD</h6>
+                    </section>
+                    <section >
+                        <p>In 0 days you can claim:</p>
+                        <h3>10 SLP</h3>
+                        <h6 class="sub-text" >~0.18 USD</h6>
+                    </section>
+                    <section >
+                        <p>Expecting for 30 days:</p>
+                        <h3>9 SLP</h3>
+                        <h6 class="sub-text" >~0.17 USD</h6>
+                    </section>
+                </main>
             </div>
             <div id="daily-slp">
-                
+                <main id="header">
+                    <div id="head1">
+                        <p class="main-head-text" >Daily SLP</p>
+                        <main>
+                            <div class="slp" id="prev">Prev SLP</div>
+                            <div class="slp" id="today-slp">Today SLP</div>
+                        </main>
+                    </div>
+
+                    <div id="head2">
+                        <p>Total SLP</p>
+                        <h3>540</h3>
+                    </div>
+                </main>
+                <section id="charts">
+                    <div class="meter">40</div>
+                    <div class="meter">30</div>
+                    <div class="meter">20</div>
+                    <div class="meter">10</div>
+                    <div class="meter">0</div>
+
+                    <div id="readings">
+                        <div class="read">
+                            <span style="height: 70%;" class="chart-inside"></span>
+                        </div>
+                        <div class="read">
+                            <span style="height: 47%;" class="chart-inside"></span>
+                        </div>
+                        <div class="read">
+                            <span style="height: 85%;" class="chart-inside"></span>
+                        </div>
+                        <div class="read">
+                            <span style="height: 70%;" class="chart-inside"></span>
+                        </div>
+                        <div class="read">
+                            <span style="height: 85%;" class="chart-inside" ></span>
+                        </div>
+                        <div class="read">
+                            <span style="height: 94%;background: #0ED2F6;" class="chart-inside" ></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="table-container-main">
+            <main id="title-head">
+                <p class="main-head-text">People that did not make the quota yesterday - 75 SLP</p>
+                <span>View All</span>
+            </main>
+            <div id="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Names</td>
+                            <td>Today</td>
+                            <td>ELO</td>
+                            <td>Scholar(<span>20%</span>)</td>
+                            <td>Lifetime</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <main class="name-container">
+                                    <p class="table-name"><span class="logos" style="background-image: url(assets/Edit.svg);width: 50px;height: 50px;border-radius: 5px;" ></span>Delvin</p>
+                                    <p class="table-sub-text">Axies: <span class="bold-number">3</span></p>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">10 SLP <sub>~2.00 USD</sub></p>
+                                    <p class="table-sub-text">Average:  <span class="bold-number">20 SLP</span><sub>~0.500 USD</sub> </p>
+                                    <p class="small-table-text">Yesterday: <span class="bold-number" style="font-weight: 500;">~5 SLP</span><sub>~0.100 USD</sub></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">983 <sub>~1 SLP/win</sub></p>
+                                    <p class="table-sub-text">Manager:  <span class="bold-number">10 SLP</span><sub>~0.18 USD</sub> </p>
+                                    <sub>(100%)</sub>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">40 SLP <sub>~0.40 USD</sub></p>
+                                    <p class="table-sub-text">Adventure SLP:  <span class="bold-number">0/50 SLP</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">34 SLP <sub>~0.61 USD</sub></p>
+                                    <p class="table-sub-text">Total:  <span class="bold-number">20 SLP</span> <sub>~0.71 USD</sub> </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <main class="name-container">
+                                    <p class="table-name"><span class="logos" style="background-image: url(assets/Edit.svg);" ></span>Delvin</p>
+                                    <p class="table-sub-text">Axies: <span class="bold-number">3</span></p>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">10 SLP <sub>~2.00 USD</sub></p>
+                                    <p class="table-sub-text">Average:  <span class="bold-number">20 SLP</span><sub>~0.500 USD</sub> </p>
+                                    <p class="small-table-text">Yesterday: <span class="bold-number" style="font-weight: 500;">~5 SLP</span><sub>~0.100 USD</sub></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">983 <sub>~1 SLP/win</sub></p>
+                                    <p class="table-sub-text">Manager:  <span class="bold-number">10 SLP</span><sub>~0.18 USD</sub> </p>
+                                    <sub>(100%)</sub>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">40 SLP <sub>~0.40 USD</sub></p>
+                                    <p class="table-sub-text">Adventure SLP:  <span class="bold-number">0/50 SLP</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">34 SLP <sub>~0.61 USD</sub></p>
+                                    <p class="table-sub-text">Total:  <span class="bold-number">20 SLP</span> <sub>~0.71 USD</sub> </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <main class="name-container">
+                                    <p class="table-name"><span class="logos" style="background-image: url(assets/Edit.svg);" ></span>Delvin</p>
+                                    <p class="table-sub-text">Axies: <span class="bold-number">3</span></p>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">10 SLP <sub>~2.00 USD</sub></p>
+                                    <p class="table-sub-text">Average:  <span class="bold-number">20 SLP</span><sub>~0.500 USD</sub> </p>
+                                    <p class="small-table-text">Yesterday: <span class="bold-number" style="font-weight: 500;">~5 SLP</span><sub>~0.100 USD</sub></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">983 <sub>~1 SLP/win</sub></p>
+                                    <p class="table-sub-text">Manager:  <span class="bold-number">10 SLP</span><sub>~0.18 USD</sub> </p>
+                                    <sub>(100%)</sub>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">40 SLP <sub>~0.40 USD</sub></p>
+                                    <p class="table-sub-text">Adventure SLP:  <span class="bold-number">0/50 SLP</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="column-cell">
+                                    <p class="cell-title">34 SLP <sub>~0.61 USD</sub></p>
+                                    <p class="table-sub-text">Total:  <span class="bold-number">20 SLP</span> <sub>~0.71 USD</sub> </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
