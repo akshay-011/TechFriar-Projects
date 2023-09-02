@@ -1,5 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
 
 body {
     background-color: #2E333A;
@@ -160,7 +161,7 @@ body {
     
 }
 #nav-buttons{
-    width: 318px;
+    width: 250px;
     height: 76px;
     display: flex;
     flex-direction: row;
@@ -175,7 +176,8 @@ body {
     border-radius: 12px;
     gap: 10px;
     background: rgba(46, 51, 58, 1);
-    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px rgba(0, 0, 0, 1);
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+
     
     animation-timing-function: ease-out;
     animation-duration: 300ms;
@@ -490,6 +492,7 @@ form{
     background-image: url(assets/no-show.svg);
     background-repeat: no-repeat;
     height: 26px;
+    margin-top: 10px;
 }
 #twitter{
     background-image: url(assets/twitter.svg);
@@ -512,7 +515,7 @@ form{
     width: 100px;
     padding: 25px 0px 25px 0px;
     border-radius: 0px 20px 20px 0px;
-    gap: 50px;
+    gap: 55px;
     background: #2E333A;
     box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000;
     display: flex;
@@ -899,13 +902,19 @@ tbody tr td{
 #card-container-main{
     display: flex;
     flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
 }
 #card-big{
     padding: 25px;
     border-radius: 25px;
-    gap: 30px;
     background: #2E333A;
     box-shadow: -7px -7px 30px 0px #262E32, 14px 14px 40px 0px #101012BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
 }
 #today{
     display: flex;
@@ -919,6 +928,7 @@ tbody tr td{
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
+    margin: 0;
 }
 #today h3{
     font-family: 'Poppins', sans-serif;
@@ -927,5 +937,85 @@ tbody tr td{
     line-height: 45px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0;
+}
+.card-big-section{
+    display: flex;
+    flex-direction: row;
+}
 
+.card-big-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.adjust-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: start;
+    justify-content: start;
+    margin-left: 2px;
+}
+.card-big-section h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B2C2CB;
+    margin: 0;
+}
+.small-blue{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: end;
+    margin: 0;
+    color: #72E4F9;
+    margin-left: 3px;
+}
+#cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: max-content;
+    
+}
+.small-card{
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+}
+.main-card-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-logos{
+    height: 35px;
+    width: 35px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #C9EBFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+.name-head-card{
+    display: flex;
+    flex-direction: column;
+}
+.name-card-person{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.selected{
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
 }
