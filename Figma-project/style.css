@@ -886,3 +886,45 @@ tbody tr td{
 
 
 }
+
+#somepage-main-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 13%;
+    width: 80%;
+    gap: 60px; 
+}
+#card-container-main{
+    display: flex;
+    flex-direction: row;
+}
+#card-big{
+    padding: 25px;
+    border-radius: 25px;
+    gap: 30px;
+    background: #2E333A;
+    box-shadow: -7px -7px 30px 0px #262E32, 14px 14px 40px 0px #101012BF;
+}
+#today{
+    display: flex;
+    flex-direction: column;
+}
+#today h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+#today h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
