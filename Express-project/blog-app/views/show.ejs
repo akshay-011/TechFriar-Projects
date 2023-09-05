@@ -1,0 +1,23 @@
+<%- include('base-head.ejs')%>
+<div class="main-container">
+    <h1 id="head1" >Showing all blogs</h1>
+    <div id="show-container">
+        <% if (data){ %>
+            <% data.map((blog) => { %>
+                <section class="card">
+                    <div class="head">
+                        <p class="heading"><%= blog.heading %></p>
+                        <img class="image" src="<%= blog.img %>" alt="image">
+                    </div>
+                    <div class="body">
+                        <p class="body-text"><%= blog.subject %></p>
+                        <sub><%= blog.name %></sub>
+                    </div>
+                </section>
+            <% }) %>
+        <% }else { %>
+            <div class="head">No Blogs Found</div>
+        <% } %>
+    </div>
+</div>
+<%- include('base-footer.ejs')%>

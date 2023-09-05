@@ -38,5 +38,10 @@ function validate(){
         </button>
       </div>`
     }
+    else {
+      document.getElementById("warning").innerHTML = `<div class="alert alert-success" role="alert">
+      Succesfully Messaged wait for the owner to reply   <a href="index.html" class="alert-link">Home Page</a>.
+    </div>`
+  }
 
 }

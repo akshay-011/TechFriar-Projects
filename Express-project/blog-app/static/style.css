@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+body, html{
+    margin: 0px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main-container{
+    background-image: url(assets/yellow-plane.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#container-main{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#container-main h1{
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+.text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    word-spacing: 5px;
+}
+.links{
+    text-decoration: none;
+    color: lavender;
+    font-weight: 700;
+    padding: 5px 25px 5px 25px;
+    background-color: rgb(125, 121, 255);
+    font-size: 23px;
+    transition:  0.5s all ease-in-out;
+    cursor: default;
+}
+.row{
+    margin-bottom: 20px;
+}
+.links:hover{
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    background-color: blue;
+    color: whitesmoke;
+}
+.card{
+    width: calc(20% + 10px);
+    background-color: rgba(197, 245, 252, 0.67);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+#show-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.card:hover{
+    background-color: rgb(197, 245, 252);
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+}
+.body-text{
+    font-size: 20px;
+}
+.body sub{
+    margin-left: 60%;
+    font-weight: 400;
+}
