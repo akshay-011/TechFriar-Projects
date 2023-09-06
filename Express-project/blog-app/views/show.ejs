@@ -2,7 +2,7 @@
 <div class="main-container">
     <h1 id="head1" >Showing all blogs</h1>
     <div id="show-container">
-        <% if (data){ %>
+        <% if (data && data.length > 0 ){ %>
             <% data.map((blog) => { %>
                 <section class="card">
                     <div class="head">
@@ -15,8 +15,8 @@
                     </div>
                 </section>
             <% }) %>
-        <% }else { %>
-            <div class="head">No Blogs Found</div>
+        <% } else { %>
+            <h1>No Blogs Found</h1>
         <% } %>
     </div>
 </div>

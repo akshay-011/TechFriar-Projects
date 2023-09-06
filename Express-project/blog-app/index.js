@@ -50,6 +50,13 @@ const db = [
         topic:'Travel Blogg',
         subject:blog,
         img:image_path
+    },
+    {
+        name:'Arya Pradeep',
+        heading:"Beauty of Coutries",
+        topic:'Travelling Bloggs',
+        subject:blog,
+        img:image_path
     }
 ]
 

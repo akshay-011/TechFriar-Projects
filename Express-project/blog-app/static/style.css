@@ -19,7 +19,6 @@ body, html{
 }
 #container-main{
     padding: 10px;
-    width: 100%;
     text-align: center;
     height: 75%;
     display: flex;
@@ -58,7 +57,7 @@ body, html{
     color: whitesmoke;
 }
 .card{
-    width: calc(20% + 10px);
+    width: calc(25% + 10px);
     background-color: rgba(197, 245, 252, 0.67);
     margin: 10px;
     padding: 15px;
@@ -89,4 +88,26 @@ body, html{
 .body sub{
     margin-left: 60%;
     font-weight: 400;
+}
+
+/* Phone View responsive */
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+        margin: 0px;
+    }
+    .main-container{
+        width: 100%;
+    }
+    #show-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: none;
+        padding: 0;
+    }
+    .card{
+        width: fit-content;
+        max-width: 420px;
+    }
 }
