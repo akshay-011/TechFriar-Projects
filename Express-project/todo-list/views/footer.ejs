@@ -1,0 +1,16 @@
+</body>
+<script>
+    const form = document.getElementById("form");
+    
+    form.addEventListener('submit', (event) => {
+        let name = document.getElementById("name").value;
+        let head = document.getElementById("head").value;
+        let desc = document.getElementById("desc").value;
+        if(name.length <= 0 && head.length <= 0 && desc.length <= 0){
+            event.preventDefault(); // preventing form  submision
+            // setting an alert
+            document.getElementById('msg-container').innerHTML = `<div id="alert" style="color: red;"><p>Please fill in the form completly</p></div>`;
+        }
+    }) 
+</script>
+</html>

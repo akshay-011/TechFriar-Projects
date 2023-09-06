@@ -1,0 +1,25 @@
+<%- include('head') %>
+<main id="all-container">
+    <div id="form-container">
+        <h1 class="main-head">Add To Do</h1>
+        <div id="msg-container"></div>
+        <main id="main-form">
+            <form id="form" method="post">
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input placeholder="Name" type="text" name="name" id="name">
+                </div>
+                <div class="form-input">
+                    <label for="name">ToDo Heading</label>
+                    <input placeholder="Heading" type="text" name="head" id="head">
+                </div>
+                <div class="form-input">
+                    <label for="name">Description</label>
+                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+</main>
+<%- include('footer') %>

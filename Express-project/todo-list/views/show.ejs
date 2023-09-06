@@ -1,0 +1,33 @@
+<%- include('head') %>
+<main id="all-container">
+    <div id="table-main-container">
+        <h1 class="main-head">ToDo List</h1>
+        <section id="table-container">
+            <div id="table">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Heading</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.map((todo) => { %>
+                            <tr>
+                                <td><%= todo.name %></td>
+                                <td><%= todo.head %></td>
+                                <td><%= todo.desc %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="tasks">
+            <a href="/todo/add">Add more</a>
+        </div>
+    </div>
+</main>
+<%- include('footer') %>

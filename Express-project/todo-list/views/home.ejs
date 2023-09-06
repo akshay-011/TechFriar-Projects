@@ -1,0 +1,22 @@
+<%- include('head') %>
+<main id="all-container">
+    <section id="main-container" >
+        <% if (msg && msg.length > 0){ %>
+            <div id="alert">
+                <p>Suucesfully added Todo Click "Show" to view your Todo's</p>
+            </div>
+        <% } %>
+        <h1 class="main-head">To Do List</h1>
+        <div id="text-container">
+            <p class="text">
+                You can add your tasks here and check it .
+            </p>
+            <div class="tasks">
+                <a href="/todo/add">Add</a>
+                <a href="/todo/show">Show</a>
+            </div>
+        </div>
+
+    </section>
+</main>
+<%- include('footer') %>
