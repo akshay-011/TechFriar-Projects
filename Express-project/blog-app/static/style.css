@@ -90,6 +90,81 @@ body, html{
     font-weight: 400;
 }
 
+#main-form{
+    border: 1px solid rgb(90, 90, 90);
+    padding: 75px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-input label{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+}
+.form-input input, textarea{
+    min-height: 30px;   
+    background-color: rgba(255, 255, 255, 0.686);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    font-size: 23px;
+}
+#submit{
+    font-size: 23px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+@keyframes dropdown{
+    0%{
+        top: -10%;
+    }
+    20%{
+        top: 15%;
+    }
+    45%{
+        top: 10%;
+    }
+    85%{
+        top: -10%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#alert{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    background-color: rgba(166, 204, 238, 0.629);
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    font-size: larger;
+    border-radius: 10px;
+    animation: dropdown ease-in-out 6s forwards;
+    animation-iteration-count: 1;
+    padding: 5px 40px 5px 40px;  
+    z-index: 1;
+}
 /* Phone View responsive */
 @media screen and (max-width: 768px) {
     body{
@@ -110,4 +185,14 @@ body, html{
         width: fit-content;
         max-width: 420px;
     }
+    #main-form{
+        padding: 10%;
+    }
+    .form-input input, textarea, label{
+        font-size: 16px;
+    }
+    #submit{
+        font-size: 16px;
+    }
 }
+

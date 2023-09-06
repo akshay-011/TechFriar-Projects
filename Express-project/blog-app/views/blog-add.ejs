@@ -1,0 +1,28 @@
+<%- include('base-head.ejs')%>
+<div class="main-container">
+    <h1 id="head1" >Add More Bloggs </h1>
+    <div id="msg-container"></div>
+        <main id="main-form">
+            <form id="form" action="/blogs/add" method="post">
+                <div class="form-input">
+                        <label for="name">Name</label>
+                        <input placeholder="Name" type="text" name="name" id="name">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Heading</label>
+                        <input placeholder="Heading" type="text" name="heading" id="heading">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Topic</label>
+                        <input placeholder="Topic" type="text" name="topic" id="topic">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Subject</label>
+                        <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+                    </div>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </main>
+        </form>
+</div>
+<%- include('base-footer.ejs')%>

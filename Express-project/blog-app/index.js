@@ -5,6 +5,8 @@ const PORT = 9876; // declaring port in a variable
 
 const app = express(); //declaring express instance
 
+app.use(express.urlencoded( { extended:true } )); //Apllying urlencoder as middleware for opst data acces 
+app.use(express.json()); // for json manipulation
 
 app.set('view engine', 'ejs'); // Setting View engine to EJS
 app.use(express.static('static')); // Setting static folder
@@ -63,15 +65,25 @@ const db = [
 
 // Home Page
 app.get('/', (req, res) => {
-    const props = {
-        title:'Home'
-    }
-    res.render('index', props);
+    const message = req.query.message;
+    res.render('index', { title:'Home', msg:message });
 })
 
-// blog page
+// blog show route
 app.get("/blogs/show", (req, res) => {
     res.render('show', {title:'Show', data:db})
+})
+
+// blog add route
+app.get("/blogs/add", (req, res) => {
+    res.render('blog-add', {title:'Add'})
+})
+
+app.post('/blogs/add', (req, res) => {
+    let data = req.body;
+    data['img'] = image_path; // adding image path
+    db.push(data);
+    res.redirect("/?message=sucess"); // redirection with messaging
 })
 
 // express listening for request and setting a call back function

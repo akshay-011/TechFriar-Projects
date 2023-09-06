@@ -1,14 +1,21 @@
 <%- include('base-head.ejs')%>
 <div class="main-container">
+    <div id="msg-container">
+        <% if(msg && msg.length > 0){ %>
+            <div id="alert">
+                <p>Blog added succesfully.</p>
+            </div>
+        <% } %>
+    </div>
     <main id="container-main">
         <h1>Publish your passions, your way</h1>
-        
         <main>
             <div class="row">
                 <p class="text">
-                    Show Bloggs in 
+                    Bloggs 
                 </p>
-                <a class="links" href="blogs/show/">Here</a>
+                <a class="links" href="blogs/show/">Show</a>
+                <a class="links" href="blogs/add/">Add</a>
             </div>
         </main>
     </main> 

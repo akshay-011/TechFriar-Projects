@@ -1,2 +1,16 @@
 </body>
+<script>
+    const form = document.getElementById("form");
+    form.addEventListener('submit', (event) => {
+        let name = document.getElementById("name").value;
+        let heading= document.getElementById("heading").value;
+        let topic = document.getElementById("topic").value;
+        let subject = document.getElementById("subject").value;
+
+        if(name.length <= 0 || heading.length <= 0 || topic.length <= 0 || subject.length <= 0  ){
+            event.preventDefault();
+            document.getElementById('msg-container').innerHTML = `<div id="alert" style="color: red;"><p>Please fill in the form completly</p></div>`;
+        }
+    })
+</script>
 </html>
