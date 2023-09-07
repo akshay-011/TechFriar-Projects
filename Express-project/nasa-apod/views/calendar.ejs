@@ -1,0 +1,22 @@
+<%- include('head') %>
+<main id="main-container">
+    <section  id="content-container">
+        <div id="form-container">
+            <form action="/apod" method="post">
+                <div class="form-input">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" name="start_date" id="start_date">
+                </div>
+                <div class="form-input">
+                    <label for="start-date">End Date</label>
+                    <input type="date" name="end_date" id="start_date">
+                </div>
+                <div class="form-input">
+                    <label>If you want today's just press "<span>Get APOD</span>" button</label>
+                </div>
+                <input class="btn" id="submit" type="submit" value="Get APOD">
+            </form>
+        </div>
+    </section>
+</main>
+<%- include('footer') %>
