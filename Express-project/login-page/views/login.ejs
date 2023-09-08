@@ -1,0 +1,22 @@
+<%- include('head') %>
+<main id="main-body">
+    <div class="msg-container">
+
+    </div>
+    <section id="form-container">
+        <form action="/login" method="post">
+            <div class="form-input">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="button-container">
+                <input type="submit" id="submit-btn" value="Login">
+            </div>
+        </form>
+    </section>
+</main>
+<%- include('footer') %>

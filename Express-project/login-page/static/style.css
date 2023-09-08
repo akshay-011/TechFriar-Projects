@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+#main-body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/adminbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-container{
+    background-color: rgb(0,19,23);
+    padding: 50px;
+    min-height: 350px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    border: 1px solid rgb(0, 255, 255);
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    color: white;
+}
+.form-input label{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.form-input input{
+    font-size: 23px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(0, 255, 255);
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+}
+#submit-btn{
+    font-size: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(0,19,23);
+    color: rgb(0, 255, 255);
+}
+
+.main-head{
+    color: aqua;
+    margin-left: 10px;
+}
+#main-body h1{
+    color: white;
+    font-size: 50px;
+}
+
+#logout-btn{
+    margin-left: 40%;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    font-weight: 500;
+    border: 2px solid rgb(0, 255, 255);
+    border-radius: 5px;
+}
