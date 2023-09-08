@@ -14,13 +14,13 @@ const PORT = 9876; // Assingning a port number
 //Initialising mock up Database
 const DATABASE = [
     { name: 'Akshay', head: 'Test', desc: 'testing my app' },
-  { name: 'Kumar', head: 'test 2', desc: 'aslajs;csba\r\navV' },
+  { name: 'Kumar', head: 'test 2', desc: 'Do my home work' },
   {
     name: 'Akshay kumar s',
     head: 'hehe',
-    desc: 'sdjvbas;vbv;avvasv\r\nva\r\na\r\nsdv\r\nas\r\ndv\r\nasd'
+    desc: 'Do my projects'
   }
-]; // initialy nothing
+]; // Just some mock up things
 
 
 // Home route

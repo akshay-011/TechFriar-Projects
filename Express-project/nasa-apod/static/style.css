@@ -16,10 +16,10 @@ body{
 #content-container{
     width: 75%;
     min-height: 60vh;
-    background-image: url(assets/starfield-banner.jpg);
+    background-image: url(assets/earth-bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 20px;
     display: flex;
     flex-direction: column;
