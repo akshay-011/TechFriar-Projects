@@ -1,5 +1,16 @@
 <%- include('head') %>
 <main id="main-container">
-    
+    <div id="apod-details">
+        <% if (data.length === 1) { %>
+            <%- include('picture', {data:data[0]}) %>
+        <% } else if(data || data.length <= 0) {%>   
+            <h1>No Any Apods Found</h1>
+        <% } else{ %>
+            <% data.map((apod) => { %>
+                <%- include('picture', {data:apod}) %>
+            <% }) %>
+        <% } %>
+
+    </div>
 </main>
 <%- include('footer') %>

@@ -1,0 +1,14 @@
+<div class="apod-container">
+    <section class="head">
+        <p><%= data.title %></p>
+    </section>
+    <div class="apod-main">
+        <div class="image-container">
+            <img src="<%= data.url %>">
+            <p class="copyright"><%= data.copyright %></p>
+        </div>
+        <section class="text-container">
+            <p><%= data.explanation %></p>
+        </section>
+    </div>
+</div>
