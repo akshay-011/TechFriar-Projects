@@ -1,5 +1,12 @@
-<%- include('head') %>
-<main id="all-container">
-    <h1>Homepage</h1>
-</main>
-<%- include('head') %>
+<%- include('head')%>
+<div class="main-container">
+    <main id="container-main">
+        <h1>Welcome <%= data.fullName %></h1>
+        <main>
+            <div class="row">
+                <a class="links" href="/logout">Logout</a>
+            </div>
+        </main>
+    </main> 
+</div>
+<%- include('footer')%>

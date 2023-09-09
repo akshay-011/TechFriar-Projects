@@ -1,0 +1,25 @@
+<%- include('head')%>
+<div class="main-container">
+        <h1 id="head1" >Sign Up to Site</h1>
+    <div id="msg-container"></div>
+        <main id="main-form">
+            <form id="signup" action="/signup" method="post">
+                <div class="form-input">
+                        <label for="name">Full Name</label>
+                        <input placeholder="Full Name" type="text" name="fullName" id="name">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Username</label>
+                        <input placeholder="username" type="text" name="username" id="heading">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Password</label>
+                        <input placeholder="Password" type="password" name="password" id="topic">
+                    </div>
+                    <a href="/login" class="direct">Don't have account ?</a>
+                    <input id="submit" type="submit" value="Sign Up">
+                </form>
+            </main>
+        </form>
+</div>
+<%- include('footer')%>
