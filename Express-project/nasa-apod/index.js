@@ -46,13 +46,13 @@ app.post("/apod", async (req, res) => {
         let url = `${URL}?api_key=${API_KEY}&start_date=${start_date}&end_date=${end_date}`
         await axios.get(url)
         .then((res) => {
-            console.log(res.data);
             DATABASE = res.data
         })
         .catch((err) => {
             console.log(err);
             DATABASE=''
         })
+        console.log(DATABASE);
         res.render('apods', {title:"APOD's", data:DATABASE});
     }
     else{

@@ -67,4 +67,4 @@ app.get("/logout", (req, res) => {
 app.listen(PORT, () => {
     console.log("[*] Server started");
     console.log(`[*] site Acces in http://localhost:${PORT}/`);
-})
+});

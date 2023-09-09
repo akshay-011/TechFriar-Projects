@@ -1,0 +1,15 @@
+<%- include('head') %>
+<div class="main-container">
+    <div class="contents">
+        <% if(came){ %>
+            <h1>You were here <%= count %> times</h1>
+            <span>
+                <h2>If You want to delete your presence</h2>
+                <a href="/delete">Delete</a>
+            </span>
+        <% } else{ %>
+            <h1>OOps!! you are new here!!</h1>
+        <% } %>
+    </div>
+</div>
+<%- include('footer') %>
