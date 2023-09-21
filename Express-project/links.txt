@@ -1,3 +1,6 @@
 https://youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&si=K2GJ1UUfXEcPcEYt
 https://ejs.co/#docs
+https://youtu.be/DZBGEVgL2eE?si=yzgTdsFRfNSm_aJQ
+https://mongoosejs.com/docs/queries.html
+https://youtu.be/TDe7DRYK8vU?si=4Y6-oPYcj4jC2dKq
 

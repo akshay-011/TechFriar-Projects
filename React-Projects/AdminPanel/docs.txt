@@ -1,0 +1,17 @@
+username : unique
+email : unique
+password : hashed with salt
+phoneNumber : length 10
+address
+
+ADMIN
+auth : usename , password
+
+views : list of users, create user, edit user, delete user
+
+
+status codes
+
+409 = duplicate entry
+500 = db error / server error
+401 = unauthorized entry

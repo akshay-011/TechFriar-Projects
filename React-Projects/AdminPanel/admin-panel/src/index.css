@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+#main-body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../public/assets/yellow-plane.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-container{
+  background-color: rgba(253, 255, 255, 0.769);
+    padding: 50px;
+    min-height: 350px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    border: 1px solid rgb(0, 255, 255);
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.form-input label{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.form-input input{
+    font-size: 23px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(0, 255, 255);
+    color: black;
+    font-weight: bold;
+}
+.btn{
+    font-size: 20px;
+    transform: translateX(-50%);
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(0,19,23);
+    color: lightgreen;
+}
+
+.main-head{
+    color: aqua;
+    margin-left: 10px;
+}
+#main-body h1{
+    color: white;
+    font-size: 50px;
+}
+
+#logout-btn{
+    margin-left: 40%;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    font-weight: 500;
+    border: 2px solid rgb(0, 255, 255);
+    border-radius: 5px;
+}
+.show-password-container{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+#checkBox{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  margin-right: 10px;
+  
+}
+.card{
+  width: calc(20vw + 10px);
+  background-color: rgba(197, 245, 252, 0.67);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+}
+#show-container{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.heading{
+  font-size: 30px;
+  font-weight: 700;
+}
+.card:hover{
+  background-color: rgb(197, 245, 252);
+  cursor: pointer;
+}
+.body-text{
+  font-size: 20px;
+}
+.body sub{
+  margin-left: 60%;
+  font-weight: 400;
+}
+
+.logos{
+    margin: 10px;
+    background-color: rgba(162, 219, 255, 0.48);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 6.223021507263184px 6.223021507263184px 18.669065475463867px 0px #000000, -6.223021507263184px -6.223021507263184px 18.669065475463867px 0px #3B4451;
+}
+#logout{
+  background-image: url(../public/assets/Logout.svg);
+}
+#navbar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+#add{
+  background-image: url(../public/assets/Add-icon.png);
+  background-position: center;
+  background-size: contain;
+}
+
+
+@keyframes dropdown{
+    0%{
+        top: -10%;
+    }
+    20%{
+        top: 15%;
+    }
+    45%{
+        top: 10%;
+    }
+    85%{
+        top: -10%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#alert{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    background-color: rgba(166, 204, 238, 0.629);
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    font-size: larger;
+    border-radius: 10px;
+    animation: dropdown ease-in-out 6s forwards;
+    animation-iteration-count: 1;
+    padding: 5px 40px 5px 40px;  
+    z-index: 1;
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  transform: translateX(20%);
+}
