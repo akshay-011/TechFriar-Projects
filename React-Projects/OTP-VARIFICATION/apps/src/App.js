@@ -4,6 +4,7 @@ import PincodeFinder from './components/PincodeFinder'
 import EmailOTP from './components/EmailOTP'
 import PhoneOTP from './components/PhoneOTP'
 import NavBar from './components/NavBar';
+import AadharVarify from './components/AadharVarify'
 
 export default function App() {
   return (
@@ -21,6 +22,12 @@ export default function App() {
           <Route 
             path='/phone'
             element={ <PhoneOTP /> }
+          />
+          <Route 
+            path='/aadhar'
+            element={
+              <AadharVarify />
+            }
           />
         </Routes>
     </div>

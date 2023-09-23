@@ -3,6 +3,7 @@ const session = require("express-session"); // import session
 const cors = require("cors"); // import cors
 const otpVarification = require("./routes/otpVarification"); // importing routes
 require("dotenv").config(); // configuring dotenv to acces .env file
+const aadharValidator = require("./routes/adhaarVarify"); // immport aadhar varify
 
 const app = express(); // initialise express app
 const PORT = 9876; // setting port number
@@ -23,6 +24,7 @@ app.use(session({
 
 // adding route for otp
 app.use("/otp", otpVarification); // added
+app.use('/aadhar', aadharValidator) // added
 
 // app listening on port 
 app.listen(PORT, () => {

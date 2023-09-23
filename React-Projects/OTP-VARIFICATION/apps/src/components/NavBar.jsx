@@ -8,6 +8,7 @@ const NavBar = () => {
             <Link to={'/'} className='nav-item'>Home</Link>
             <Link to={'/email'} className='nav-item'>Email OTP</Link>
             <Link to={'/phone'} className='nav-item'>Phone OTP</Link>
+            <Link to={'/aadhar'} className='nav-item'>Aadhar Varify</Link>
         </section>
     </div>
   )
