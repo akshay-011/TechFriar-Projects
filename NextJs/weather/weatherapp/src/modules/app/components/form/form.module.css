@@ -1,0 +1,12 @@
+.form{
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 15%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    padding: 40px 10px 40px 10px;
+}

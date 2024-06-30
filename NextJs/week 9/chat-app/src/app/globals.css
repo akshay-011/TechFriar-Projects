@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color: rgb(237, 236, 236);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.fill-screen{
+    width: 100%;
+    height: 100vh;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-form{
+    background-color: rgb(255, 255, 255);
+    padding: 70px 40px 70px 40px;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+  .form-input label{
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  
+  .form-input input{
+    height: 30px;
+    font-size: 23px;
+  }
+
+  .btn{
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    width: 100%;
+    font-weight: 500;
+    background-color: rgb(0, 198, 3);
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: ease-in-out;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: rgb(0, 112, 2);
+  }
+  
+  .btn:disabled{
+    opacity: 0;
+  }
+  
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #174b70;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item:hover{
+    background-color: #002a47;
+    transition: ease-in-out;
+    font-weight: 400;
+}
+
+.main-show{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cover{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.head-main{
+    font-size: 18px;
+    letter-spacing: 2px;    
+}
+

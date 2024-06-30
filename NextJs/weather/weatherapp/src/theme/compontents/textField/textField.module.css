@@ -1,0 +1,14 @@
+.textfield{
+    color: black;
+    font-size: 24px;
+    width: 20vw;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border: none;
+    border-radius: 10px;
+    min-width: 30px;
+}
+
+.textfield:focus{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; 
+}

@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rgba(195, 195, 195, 0.912);
+    color: #fe892a;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.navItem{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes dropdown{
+  0%{
+      top: -10%;
+  }
+  20%{
+      top: 15%;
+  }
+  45%{
+      top: 10%;
+  }
+  85%{
+      top: -10%;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
+#floating-alert{
+  position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    font-size: larger;
+    border-radius: 10px;
+    animation: dropdown ease-in-out 6s forwards;
+    animation-iteration-count: 1;
+    padding: 5px 40px 5px 40px;  
+    z-index: 1;
+}
+
+
+#main-body{
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  background-image: url(../public/car-bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.form-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form{
+  background-color: rgb(255, 255, 255);
+  padding: 70px 40px 70px 40px;
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+.form-input label{
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.form-input input{
+  height: 30px;
+  font-size: 23px;
+}
+
+.btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  font-weight: 800;
+  background-color: rgb(121, 230, 249);
+  border: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: ease-in-out 3s;
+  text-decoration: none;
+}
+
+.btn:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.btn:disabled{
+  opacity: 0;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+
+#loader-container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.412);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text{
+  font-size: 15px;
+  color: blue;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.show-password-container{
+  display: flex;
+  gap: 10px;
+}
+.show-password-container input{
+  width: 20px;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 200px;
+}
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar-container li, .list-item{
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar-container li:hover, .list-item:hover{
+  cursor: pointer;
+}
+.second-main-admin{
+  margin-left: 200px;
+}
+.vehicle{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  color: white;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.544);
+  width: fit-content;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.vehicle-image{
+  width: 350px;
+  border-radius: 40px 10px 40px 10px;
+}
+
+.vehicle-tags{
+  margin: 0;
+}
+
+.disabled{
+  opacity: 0.6;
+  color: gray;
+}
+
+.red{
+  color: red;
+  background-color: rgba(255, 255, 255, 0);
+  height: fit-content;
+  box-shadow: none;
+}
+.red:hover{
+  box-shadow: none;
+}
+
+.vehicle-second{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 500px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-home{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.green{
+  color: rgb(0, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  height: fit-content;
+  box-shadow: none;
+}
+.yellow{
+  color: rgb(255, 225, 0);
+  background-color: rgba(255, 255, 255, 0);
+  height: fit-content;
+  box-shadow: none;
+}
+
+.green:hover{
+  box-shadow: none;
+}
+
+.table-container{
+  font-size: 23px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.713);
+  min-height: 90vh;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
+  width: fit-content;
+  padding: 20px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+thead th{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 0px 12px 0px;
+}
+
+table td, table th { 
+  padding: 10px;
+}
+
+table tr:hover{
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+
+.user-home{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbar{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(146, 220, 254, 0.497);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1{
+  margin: 0;
+  margin-left: 5%;
+}
+
+.button-navbar span{
+  margin-right: 20px;
+}
+
+.profile-user{
+  display: flex;
+  flex-direction: column;
+}
+
+.user{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-top: 1px dotted rgb(104, 62, 62) ;
+  padding: 20px;
+}
+.user h1{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.user h3{
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.sidebar-options{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-options h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+}
+.options{
+  font-size: 20px;
+}
+
+.options label{
+  font-size: 23px;
+}
+
+.radio-btn{
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+}
+.user-sidebar{
+  width: fit-content;
+  padding-right: 10px;
+  position: fixed;
+  width: 250px;
+  gap: 20px;
+}
+
+.main-content{
+  margin-left: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.search{
+  font-size: 20px;
+  margin: 0;
+}
